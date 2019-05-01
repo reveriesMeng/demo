@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<link rel="stylesheet" type="text/css" href="test.css">
+	<script type="text/javascript" src="test.js"></script>
+</head>
+<body>
+	<div class="container" id="container" ondrop="drop(event)" ondragover="dragover(event)"></div>
+	<div class="target" draggable="true" id="target" ondragstart="dragstart(event)"></div>
+	<img class="hide" id="img" src="喜欢.png">  <!-- 拖拽时的图标大小设置会无效，只能控制图片源大小 -->
+
+
+	<script type="text/javascript">
+		dragstart = function (e) {
+			e.dataTransfer.setData('Text', e.target.id);//将这个id的值保存为text形式传出去
+			var n = document.getElementById('img').cloneNode();
+			n.removeAttribute('class');
+			e.dataTransfer.setDragImage(n, 100, 100);  //第一个值穿一个要显示的元素，后面两个值时初始坐标x，y
+		}
+		drop =function (e) {
+			e.preventDefault();
+			var data = e.dataTransfer.getData('Text');//获取文件形式从而获得穿过来的内容
+			e.target.appendChild(document.getElementById(data));
+		}
+		dragover = function (e) {
+			e.preventDefault();
+		}
+	</script>
+</body>
+</html>

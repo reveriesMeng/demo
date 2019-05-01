@@ -1,0 +1,15 @@
+.container {
+	height: 200px;
+	width: 200px;
+	background: yellow;
+}
+
+.target {
+	height: 100px;
+	width: 100px;
+	background: hotpink;
+}
+
+/*.hide {
+	display: none;
+}*/

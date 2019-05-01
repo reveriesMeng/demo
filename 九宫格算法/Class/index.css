@@ -1,0 +1,49 @@
+/*突然在想用GRID布局可以搞定这个九宫格算法么，好像可以控制列数，行数不确定。。*/
+
+.image {
+	width: 250px;
+	height: 250px;
+	margin-bottom: 10px;
+	background-color: #1AF9DC;
+}
+
+.inner {
+	position: relative;
+	width: 250px;  /*默认的值居中*/
+	margin: 30px auto;
+}
+
+.btn-wrapper {
+	display: flex;
+	width: 330px;
+	height: 50px;
+	border: 2px solid #18F61C;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 10px;
+	background-color: #22F99C;
+}
+
+.btn {
+	width: 50px;
+	height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

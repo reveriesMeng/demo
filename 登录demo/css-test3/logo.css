@@ -1,0 +1,128 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h3 {
+	width: 300px;
+	height: 80px;
+	margin: 0 auto;
+	font-size: 26px;
+	line-height: 50px;
+	background-color: lightblue;
+	text-align: center;
+}
+
+input {
+	width: calc(100% - 58px);
+	border-width: 0;
+	outline: 0;
+}
+
+p {
+	display: block;
+	width: 300px;
+	height: 20px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.a p:nth-of-type(4) {
+	border-width: 0;
+	text-align: center;
+}
+
+p:nth-of-type(2) a:before {
+	content: "";
+	border-right: 2px solid #ccc;
+}
+
+#one {
+	display: block;
+	width: 50px;
+	height: 30px;
+	margin: 0 auto;
+	border-radius: 5px;
+	background-color: lightblue;
+	border: none;
+	box-shadow: 0 3px 2px #ccc;
+	outline: 0;
+}
+
+a{
+	direction: inline-block;
+	text-align: right;
+	text-decoration: none;
+}
+
+#ss {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	font-size: 13px;
+	outline: 0;
+	border: none;
+	background-color: lightblue;
+}
+
+/* two是最底层，上一层是wrapper，再上一层则是透明覆盖层，最后一层为登录层*/
+
+#two {
+	position: absolute;
+	left: 30px;
+	top: 20px;
+	width: 100px;
+	height: 50px;
+	margin: 0 auto;
+	border-radius: 20px;
+	background-color: orange;
+	border: none;
+	box-shadow: 0 3px 2px #ccc;
+	outline: 0;
+	z-index: 100;
+}
+
+#wrapper {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 101;
+	display: none;
+}
+
+/*#wrapper{
+	display: block;
+}*/
+
+#touming {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #bebebe;
+	opacity: 0.5;
+	z-index: 102;
+}
+
+#main {
+	position: absolute;
+	left: 0;
+	right: 0;
+	background-color: white;
+	margin: 200px auto 0 auto;
+	width: 301px;
+	border: 0.5px solid black;
+	z-index: 103;
+}
+
+
+
+
+
+
+

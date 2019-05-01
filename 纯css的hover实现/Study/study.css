@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#wrapper {
+	position: relative;
+	width: 421px;
+	height: 200px;
+	margin: 150px auto;
+	
+}
+
+.tab-header {
+	display: table-cell;
+	width: 60px;
+	height: 40px;
+	font-size: 20px;
+	border-bottom: 1px solid #ccc;
+	vertical-align: middle;
+	text-align: center;
+	transition: all 0.5s linear;
+	background-color: #fff;
+}
+
+#wrapper>div:nth-of-type(1), 
+#wrapper>div:nth-of-type(2), 
+#wrapper>div:nth-of-type(3) {
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+
+#wrapper>div:nth-of-type(1):hover, 
+#wrapper>div:nth-of-type(2):hover, 
+#wrapper>div:nth-of-type(3):hover {
+	background-color: #eee;
+	transition: all 0.5s linear;
+	border-bottom: none;
+}
+
+#wrapper>div:nth-of-type(3) {
+	border-right: 1px solid #ccc;
+}
+
+#tab-body {
+	position: absolute;
+	left: 0;
+	top: 40;
+	z-index: 1;
+}
+
+#tab-body>div {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 421px;
+	height: 160px;
+	border: 1px solid #ccc;
+	border-top: none;
+	z-index: 1;
+}
+
+#tab-body>div:nth-of-type(1) {
+	z-index: 2;
+}
+
+	/*~只作用于同一级内的元素或者同一级内的子元素*/
+#wrapper>div:nth-child(1):hover~#tab-body>div:nth-of-type(1),
+#wrapper>div:nth-child(2):hover~#tab-body>div:nth-of-type(2),
+#wrapper>div:nth-child(3):hover~#tab-body>div:nth-of-type(3),
+#tab-body>div:hover {
+	z-index: 3;
+}
+
+

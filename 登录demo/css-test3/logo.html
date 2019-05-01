@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+	<title>logo</title>
+	<link rel="stylesheet" type="text/css" href="logo.css">
+</head>
+<body style="height: 100%">
+	<div id="wrapper">
+		<div id="touming"></div>
+		<div id="main">
+			<form action="" method="post">
+				<h3>登录</h3>
+				<button id="ss" onclick="closeo('wrapper')">X</button>
+				<div class="a">
+					<p>
+						<input type="text" name="user" placeholder="账号/手机" id="user">
+					</p>
+					<p>
+						<input type="password" name="password" placeholder="密码" id="password">
+						<a href="/forget">忘记密码</a>
+					</p>
+					<p>
+						<input type="text" name="code" placeholder="验证码" id="code">
+						<img src="/code">
+					</p>
+					<button id="one" type="submit">登录</button>
+					<p>
+						<a href="/register">注册</a>
+					</p>
+				</div>
+			</form>
+		</div>
+	</div>
+	<button id="two" onclick="openo('wrapper')">login</button>
+	<script type="text/javascript" src="logo.js"></script>
+</body>
+</html>

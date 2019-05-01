@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.frame {
+	position: relative;
+	width: 300px;
+	height: 250px;
+	border: 5px solid #54F430;
+	margin: 100px auto;
+	overflow: hidden;
+}
+
+.frame-content {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+}
+
+.frame-content-img {
+	display: flex;
+	width: 300px;
+	height: 250px;
+	justify-content: center;
+	align-items: center;
+	background-color: lightblue;
+	border-right: 5px solid lightblue;
+	z-index: -999;
+}
+
+.frame-select {
+	display: flex;
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+}
+
+.frame-select-btn {
+	display: flex;
+	width: 15px;
+	height: 25px;
+	margin-left: 5px;
+	align-items: center;
+	justify-content: center;
+	background-color: hotpink;
+}
+
+.frame-select-btn:hover {
+	background-color: #F36B24;
+	cursor: pointer;
+	color: white;
+}
+
+.frame-dir {
+	display: none;
+	position: absolute;
+	width: 300px;
+	left: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.frame-dir-left {
+/*	display: none;*/
+	position: absolute;
+	left: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	z-index: 999;
+	cursor: pointer;
+	user-select: none;
+}
+
+.frame-dir-right {
+/*	display: none;*/
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	z-index: 999;
+	cursor: pointer;
+	user-select: none;
+}
+
+.frame-dir:hover,
+.frame-content:hover~.frame-dir {
+	display: block;
+}
+
+#current {
+	background-color: #F36B24;
+	cursor: pointer;
+	color: white; 
+}
