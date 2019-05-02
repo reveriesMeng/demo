@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>js Learning -懒加载</title>
+		<style type="text/css">
+			#box{
+				width:80%;
+				margin:0 auto;
+			}
+			#box li{
+				list-style: none;
+				width:250px;
+				height:250px;
+				border: 1px solid black;
+				float:left;
+				margin-left: 20px;
+				margin-top: 20px;
+			}
+			#box img{
+				width:100%;
+				height:100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id='box'>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			<li><img alt="懒加载" data-src="image/01.gif"/></li>
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		//获取所有图片
+		var aImage = document.getElementsByTagName('img');
+		//获取可视区高度
+		var height = document.documentElement.clientHeight;
+			
+		//当滚动时触发
+		window.onload = window.onscroll = function(){
+			//得到滚动卷起高度
+			var scrollTop = document.documentElement.scrollTop;
+			//遍历所有图片
+			for(var i = 0 ; i < aImage.length ; i++ ){
+				//获取该图片举例网页顶部和可视区高度,判断是否显示
+				//距网页顶部高度
+				var top = aImage[i].offsetTop;
+				//-300为了能方便观察加载
+				if(top <=  height + scrollTop - 300){
+					aImage[i].src = aImage[i].dataset.src;
+				}
+			}
+			
+		};
+ 
+	</script>
+</html>
