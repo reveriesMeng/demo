@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>五星好评</title>
+</head>
+<style type="text/css">
+	li {
+		float: left;
+		font-size: 30px;
+		color: red;
+		list-style: none;
+		cursor: pointer;
+	}
+</style>
+<body>
+	<ul id="comment">
+		<li class="star">✰</li>
+		<li class="star">✰</li>
+		<li class="star">✰</li>
+		<li class="star">✰</li>
+		<li class="star">✰</li>
+	</ul>
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+		$("#comment>li").on("mouseenter", function() {
+			$(this).nextAll().text("✰");
+			$(this).text("★").prevAll().text("★");
+		}).on("mouseleave", function() {
+			$(this).text("✰").prevAll().text("✰");
+			$("#comment>li[click]").text("★").prevAll().text("★");
+		}).on("click", function() {
+			$(this).attr("click", "on").siblings().removeAttr("click");
+		});
+	</script>
+</body>
+</html>
